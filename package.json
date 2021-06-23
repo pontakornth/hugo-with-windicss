@@ -1,0 +1,28 @@
+{
+  "name": "hugo-with-windicss",
+  "version": "1.0.0",
+  "description": "A Hugo setup with windicss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "windi:dev": "windicss -mto static/style.css --config windi.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pontakornth/hugo-with-windicss.git"
+  },
+  "keywords": [
+    "hugo",
+    "windicss",
+    "template"
+  ],
+  "author": "pontakornth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pontakornth/hugo-with-windicss/issues"
+  },
+  "homepage": "https://github.com/pontakornth/hugo-with-windicss#readme",
+  "dependencies": {
+    "windicss": "^3.1.3"
+  }
+}

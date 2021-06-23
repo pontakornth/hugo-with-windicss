@@ -4,8 +4,12 @@
   "description": "A Hugo setup with windicss",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "windi:dev": "windicss -mto static/style.css --config windi.config.js"
+    "windi:dev": "windicss -mto static/style.css --config windi.config.js --dev",
+    "windi": "windicss -mto static/style.css --config windi.config.js",
+    "hugo:dev": "hugo server -D",
+    "hugo": "hugo",
+    "dev": "run-p windi:dev hugo:dev",
+    "build": "run-s windi hugo"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
   },
   "homepage": "https://github.com/pontakornth/hugo-with-windicss#readme",
   "dependencies": {
+    "npm-run-all": "^4.1.5",
     "windicss": "^3.1.3"
   }
 }
